@@ -20,7 +20,7 @@ import (
 
 var inputFilename = flag.String("input", "", "Input image.")
 var outputDir = flag.String("output", "output", "Output dir.")
-var maxTileSize = flag.Int("max-size", 1000, "Max length of a tile's side.")
+var maxTileSize = flag.Int("max-size", 1024, "Max length of a tile's side.")
 
 func subImage(im *image.RGBA, bounds image.Rectangle) *image.RGBA {
 	return &image.RGBA{
